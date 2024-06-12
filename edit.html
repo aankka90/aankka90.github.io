@@ -4,25 +4,14 @@
 <meta charset="utf-8">
 <title>editor</title>
   
-<meta name="viewport" content="width=device-width,user-scalable=1,interactive-widget=overlays-content">
+<meta name="viewport" content="width=device-width, user-scalable=yes, interactive-widget=overlays-content">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none';">
+<link rel="stylesheet" href="edit.css">
 </head>
 <body>
-<style>
-#input {
-  width: 100%;
-}
-</style>
-<textarea id="input"></textarea>
-<button id="btn_run">Run</button>
-<script type="module">
-const input = document.getElementById('input')
-const btnRun = document.getElementById('btn_run')
-btnRun.onclick = e => {
-  eval(input.value)
-}
-//const  htmlText = `<textarea></textarea>`
-//document.body.insertAdjacentHTML('afterbegin', htmlText)
-</script>
+<textarea id="editor"></textarea>
+<button id="run">Run</button>
+<script src="eval.js"></script>
+<script type="module" src="edit.js"></script>
 </body>
 </html>
