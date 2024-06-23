@@ -1,5 +1,5 @@
 
-||whatismybrowser.com^$script
-||jrants.com^$script
-||buondua.com^$script
-||shinv.pics^$script
+||whatismybrowser.com*$script
+||jrants.com*$script
+||buondua.com*$script
+||shinv.pics*$script
