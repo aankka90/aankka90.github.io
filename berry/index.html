@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Berry fetch</title>
+</head>
+<body>
+<input type="text">
+<button>Fetch</button>
+<pre></pre>
+<script>
+const input = document.querySelector('input')
+const button = document.querySelector('button')
+const pre = document.querySelector('pre')
+
+button.onclick = e => {
+  fetch(input.value)
+  .then(s => s.text())
+  .then(s => {
+    pre.insertAdjacentText('beforeend', s)
+  })
+}
+</script>
+</body>
+</html>
