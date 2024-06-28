@@ -6,21 +6,24 @@
   <title>Bookmarks</title>
   
   <link rel="stylesheet" href="mvp.css">
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 <body>
 
-<h2>Bookmarks:</h2>
+<h2>Bookmarks v2</h2>
 <div x-data="bookmarks">
   <template x-for="it in list" :key="it.url">
     <a :href="it.url" x-text="it.title"></a>
   </template>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script type="module">
 import { dataList } from './bookmarkData.js'
 
+alert(JSON.stringify(dataList[0]))
+
 document.addEventListener('alpine:init', () => {
+  alert('init'+Alpine)
   Alpine.data('bookmarks', () => ({
     list: dataList,
   }))
