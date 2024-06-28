@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=400">
+  <title>Bookmarks</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<div x-data="{
+  aa: ['foo', 'bar', 'baz'],
+  get filt() {
+    return this.items.map(s => s)
+  }
+}">
+  <ul>
+    <template x-for="s in aa" :key="s">
+      <li x-text="s"></li>
+    </template>
+  </ul>
+</div>
+</body>
+</html>
