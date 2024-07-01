@@ -1,1 +1,59 @@
-<html></html>
+<!--
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" inert>
+<head>
+<meta charset="utf-8" />
+<title>New script</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="css/ratchet.css" rel="stylesheet" />
+<link href="css/browser-page-theme.css" rel="stylesheet" />
+<link href="mbrowser.css" rel="stylesheet" />
+<script src="js/ratchet.js"></script>
+<link id="x_link_extra_css_id" rel="stylesheet" href="data:text/css,html,body,a,div,p,img,textarea{-webkit-touch-callout:text !important;-webkit-user-select:text !important;user-select:text !important;}" />
+
+<script src="mbrowser.js"></script>
+<script>
+function nav_call_set_expoint(e){var t=document.querySelector("#extra");t&amp;&amp;(t.value=e)}function chooseExPoint(){var e=document.querySelector("#extra"),t="";e&amp;&amp;(t=e.value),mbrowser.chooseExpoint(t)}function show_form(){var e='            &lt;form&gt;\n                &lt;input id="script_id" type="hidden" value="" /&gt;\n                &lt;input id="title" type="text" placeholder="'+mbrowser.getStringResource("web_str_script_name")+'"&gt;\n                &lt;textarea id="script_desc" rows="3" placeholder="'+mbrowser.getStringResource("web_str_script_desc")+'"&gt;&lt;/textarea&gt;\n                &lt;input id="create_by" type="text" placeholder="'+mbrowser.getStringResource("web_str_script_create_by")+'"&gt;\n                &lt;input id="extra" type="hidden" value="" /&gt;\n                &lt;textarea id="script_data" rows="7"  placeholder="'+mbrowser.getStringResource("web_str_script_code")+'"&gt;&lt;/textarea&gt;\n            &lt;/form&gt;\n            &lt;button onclick="chooseExPoint()" class="btn btn-block"&gt;'+mbrowser.getStringResource("web_str_set_ex_point")+'&lt;/button&gt;\n            &lt;button onclick="submitScriptForm()" class="btn btn-positive btn-block"&gt;'+mbrowser.getStringResource("web_str_save")+"&lt;/button&gt;";document.write(e)}function submitScriptForm(){var e,t=document.querySelector("#script_id"),r=document.querySelector("#title"),o=document.querySelector("#script_desc"),c=document.querySelector("#create_by"),n=document.querySelector("#script_data"),i=document.querySelector("#extra");""!=name.value&amp;&amp;""!=n.value?((e={}).resource_id=t.value,e.title=r.value,e.description=o.value,e.nick_name=c.value,e.content=n.value,i&amp;&amp;(e.extra=i.value),mbrowser.addNewScript(JSON.stringify(e))):mbrowser.showToast("form value not allow empty")}function bindScriptForm(e){var t=JSON.parse(mbrowser.getUserScriptByJson(e)),e=document.querySelector("#script_id"),r=document.querySelector("#title"),o=document.querySelector("#script_desc"),c=document.querySelector("#create_by"),n=document.querySelector("#script_data"),i=document.querySelector("#extra");e&amp;&amp;(e.value=t.script_id),r&amp;&amp;(r.value=t.title),o&amp;&amp;(o.value=t.script_desc),c&amp;&amp;(c.value=t.create_by),n&amp;&amp;(n.value=t.script_data),i&amp;&amp;(i.value=t.ex_point)}
+</script>
+</head>
+<style type="text/css" id="x_style_extra_css_id">
+data:text/css,
+html,body,a,div,p,img,textarea{-webkit-touch-callout:text !important;-webkit-user-select:text !important;user-select:text !important;}
+</style>
+<body>
+<header class="bar bar-nav">
+<h1 class="title">
+<script>
+_str("web_str_title_newscript")
+</script>
+New script</h1>
+</header>
+
+<div class="content">
+<div class="edit-form control-content active">
+<script>
+show_form()
+</script>
+<form>
+<input id="script_id" type="hidden" value="29d1889c08d0fae18340efd3b83c1959" />
+<input id="title" type="text" placeholder="Script name" />
+<textarea id="script_desc" rows="3" placeholder="Brief introduction">
+</textarea>
+<input id="create_by" type="text" placeholder="Create by" />
+<input id="extra" type="hidden" value="ep.menu.tool" />
+<textarea id="script_data" rows="7" placeholder="Javascript code">
+</textarea>
+</form>
+<button onclick="chooseExPoint()" class="btn btn-block">Set the script execution mode</button>
+<button onclick="submitScriptForm()" class="btn btn-positive btn-block">Save</button>
+</div>
+</div>
+<script>
+var script_id=getQueryString("script_id");
+script_id&amp;&amp;bindScriptForm(script_id);
+</script>
+</body>
+</html>
+-->
